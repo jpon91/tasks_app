@@ -8,7 +8,7 @@ class Task < ActiveRecord::Base
   private
 	def clean_description
 		if self.description.present?
-			self.description.strip.capitalize!
+			self.description.strip!.capitalize!
 		end
 	end
 end
