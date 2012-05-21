@@ -1,0 +1,10 @@
+<ol>
+  <% @tasks.each do |task|%>
+    <li>
+      <%= task.description %>
+      <%= link_to "show priority", task %>
+      <%= link_to "delete", task, :method => :delete, :confirm => "are you sure?" %>
+   </li>
+  <% end %>
+</ol>
+<%= link_to "create a task", new_task_path %>
