@@ -9,7 +9,6 @@ class TasksController < ApplicationController
 	@task = Task.new params[:task]
     
       if @task.valid?
-	@task.save	
         redirect_to @task#, notice: 'Post was successfully created.' 
         
       else
