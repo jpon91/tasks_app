@@ -14,10 +14,8 @@ class TasksController < ApplicationController
       #else
        #  render action: "new" 
         
-      #end
+      end
     
-  
-	
   end
 
   def new
