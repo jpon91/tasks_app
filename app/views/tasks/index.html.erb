@@ -4,6 +4,7 @@
       <%= task.description %>
       <%= link_to "show priority", task %>
       <%= link_to "delete", task, :method => :delete, :confirm => "are you sure?" %>
+	<%= link_to "edit", "/tasks/#{task.id}/edit" %>
    </li>
   <% end %>
 </ol>
