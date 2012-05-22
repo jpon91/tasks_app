@@ -4466,3 +4466,16 @@ Started GET "/users.json" for 127.0.0.1 at 2012-05-21 11:31:24 -0600
 Processing by UsersController#index as JSON
   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
 Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTasks (20120515172510)
+Migrating to CreateUsers (20120521171452)
+Migrating to AddPasswordToUsers (20120522165232)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "password_digest" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120522165232')[0m
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tasks")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
