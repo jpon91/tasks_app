@@ -1,3 +1,4 @@
+<% if session[:user_id] %>
 <%= form_for @task do |f| %>
  <% if  @task.errors.any? %>
 	<h2>There were errors</h2>
@@ -6,6 +7,7 @@
 			<li> <%= msg %> </li>
 		<% end %>
 	</ul>
+<% end %>
   <p>
     <%= f.label :description %>
     <%= f.text_area :description %>
@@ -17,4 +19,7 @@
   <p>
     <%= f.submit %>
   </p>
+<% end %>
+<% else %>
+<p>Log in to create or edit Tasks</p>
 <% end %>

@@ -8,14 +8,14 @@ class SessionsController < ApplicationController
 		session[:user_id]=@user.id
 		redirect_to root_path, notice: "logged in!"
 	else
-		flash.now.alert "wrong email or password"
+		flash.now[:notice]= "wrong email or password"
 		render :new
 	end
 		
 			  
   end
   def destroy
-  	session[:user_id]=nill
-	redirect_to root_path
+  	session[:user_id]=nil
+	redirect_to root_path, notice: "logged out!"
   end
 end

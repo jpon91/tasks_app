@@ -7,6 +7,7 @@ class TasksController < ApplicationController
   def create
 
 	@task = Task.new params[:task]
+	@task[:user_id]= session[:user_id]
     
       if @task.valid?
 	@task.save	

@@ -1,3 +1,4 @@
+<% if session[:user_id] %>
 <%= form_for @task do |f| %>
  <% if  @task.errors.any? %>
 	<h2>There were errors</h2>
@@ -15,7 +16,11 @@
     <%= f.label :priority %>
     <%= f.number_field :priority %>
   </p>
+<!--<%= f.label :user%> <%= f.collection_select :user_id,User.all,:id, :username %> -->
   <p>
     <%= f.submit %>
   </p>
+<% end %>
+<% else %>
+<p>Log in to create or edit Tasks</p>
 <% end %>
