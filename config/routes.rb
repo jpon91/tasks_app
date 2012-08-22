@@ -7,7 +7,7 @@ Tasks::Application.routes.draw do
 
 resources :tasks
 resources :sessions
-root to: "tasks#index"
+root to: "users#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

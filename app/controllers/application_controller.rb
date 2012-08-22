@@ -28,6 +28,16 @@ para[:password_confirmation]=token.to_s
   def logged_in?
      	current_user.present?
   end
+
+  def valido?
+   if 	current_user.present?
+	@current_user =User.find(session[:user_id])
+	a=@current_user[:expires]
+	
+   else
+	return nil
+   end
+  end
   helper_method :current_user, :logged_in?, :create_user
   
 end
