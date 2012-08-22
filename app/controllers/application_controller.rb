@@ -6,7 +6,11 @@ class ApplicationController < ActionController::Base
 	if session[:user_id]
 		if(User.exists?(session[:user_id]))
      			@current_user ||=User.find(session[:user_id])
+		else
+			return nil		
 		end
+	else
+		return nil
 	end
   end
   
@@ -27,9 +31,15 @@ para[:expires]=expires.to_s
   end
 
   def logged_in?
-     	a=current_user
-	if a=nil
+     	a=current_user	
+	if (a)
+		
+		
+	else
 		return nil
+	end
+
+		
 	if((Time.now<=>Time.parse(a[:expires]))==1)
 		return nil
 	else

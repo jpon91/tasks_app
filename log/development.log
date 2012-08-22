@@ -45201,3 +45201,608 @@ ActionController::RoutingError (No route matches [GET] "/undefined"):
 
 
   Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:16:33 -0600
+
+SyntaxError (/home/jonathan/tasks_app/app/controllers/application_controller.rb:51: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:16:54 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (84.1ms)
+Completed 500 Internal Server Error in 104ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:34:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.5ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:18:55 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined local variable or method `a' for #<UsersController:0xb1adf8c>):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:36:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:19:56 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined local variable or method `a' for #<UsersController:0xa32fadc>):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:36:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.5ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:19:59 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `a' for #<UsersController:0xb4bd8d0>):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:36:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:20:00 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `a' for #<UsersController:0xae90764>):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:36:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:22:57 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:36:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:24:02 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:36:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 16.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /scaffolds.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 16:25:19 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:26:01 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:37:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:27:16 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:37:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (59.2ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (72.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:28:42 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:39:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:28:43 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:39:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:29:47 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:39:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.7ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:29:48 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:39:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.1ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 12.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /users.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 16:30:21 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:30:40 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:41:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.1ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:31:27 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:41:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:32:06 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:41:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.0ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 32ms (Views: 15.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /users.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /application.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-22 16:33:35 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 16:33:50 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (can't convert nil into String):
+    1: <h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
+    2: 
+    3: <% if logged_in? %>
+    4: 	<p> Logged in as <%= current_user.email %></p>
+    5: 	<%= link_to "Mi perfil", user_path(current_user.id) %>
+    6: 	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+  app/controllers/application_controller.rb:43:in `logged_in?'
+  app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__598746004_94629020'
+  app/controllers/users_controller.rb:8:in `index'
+
+
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.1ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.2ms)
