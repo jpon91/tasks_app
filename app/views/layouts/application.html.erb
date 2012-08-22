@@ -15,7 +15,8 @@
 
 	function post() {
 if(valid()!=0){
-var url=string.concat("http://morning-rain-8661.herokuapp.com/",document.getElementById('menu').options[document.getElementById('menu').selectedIndex].value,".html");
+var val=document.getElementById('menu').options[document.getElementById('menu').selectedIndex].value;
+var url=string.concat("http://morning-rain-8661.herokuapp.com/",".html");
                 FB.api('/me/gradesdisplay:develop', 'post', { project: var }, function(response) {
   if (!response || response.error) {
     alert(response.error.message);
