@@ -1,8 +1,9 @@
-<h1>Applicacion de busqueda de informacion y posts para facebook</h1>
+<h1>Applicacion de busqueda de informacion y publicacion de posts para facebook</h1>
 
 <% if logged_in? %>
 	<p> Logged in as <%= current_user.email %></p>
-	<%= link_to "Logout of grades", session_path(id:"current"), method: "delete" %>
+	<%= link_to "Mi perfil", user_path(current_user.id) %>
+	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
 
 
 <% else %>

@@ -27,7 +27,12 @@ para[:expires]=expires.to_s
   end
 
   def logged_in?
-     	current_user.present?
+     	a=current_user
+	if((Time.now<=>Time.parse(a[:expires]))==1)
+		return nil
+	else
+		return 1
+	end
   end
 
   def valido?

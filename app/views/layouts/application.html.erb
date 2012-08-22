@@ -43,14 +43,26 @@ var d = new Date();
            ref.parentNode.insertBefore(js, ref);
          }(document));
 
-	function post() {
-                FB.api('/me/gradesdisplay:develop', 'post', { project: 'http://morning-rain-8661.herokuapp.com/ruby.html' }, function(response) {
+function valid(menu) {
+  if(menu.selectedIndex == 0) {
+    
+    return 0;} 
+  else {
+      return menu.selectedIndex; }}
+
+	function post(menu) {
+if(valid(menu)!=0){
+var url=string.concat("http://morning-rain-8661.herokuapp.com/",menu.options[valid(menu)].value,".html");
+                FB.api('/me/gradesdisplay:develop', 'post', { project: var }, function(response) {
   if (!response || response.error) {
     alert(response.error.message);
   } else {
     alert('Post ID: ' + response.id);
   }
 });
+}else{
+	alert('Escoja una de las opciones');
+}
             };
 function post2(){
 var body = 'Reading JS SDK documentation';
@@ -71,9 +83,7 @@ FB.api('/me/feed', 'post', { message: body }, function(response) {
 <script src="https://connect.facebook.net/en_US/all.js"></script>
 <script type="text/javascript">FB.init();</script>
       
-<form>
-        <input type="button" value="Post something" onclick="post()" />
-    </form>
+
 
 <div align="center">
         <img id="image"/>
@@ -85,13 +95,7 @@ FB.api('/me/feed', 'post', { message: body }, function(response) {
 </div>
 
 <% end %>
-<% if logged_in? %>
-	<p> Logged in as <%= current_user.email %></p>
-	<%= link_to "Logout of grades", session_path(id:"current"), method: "delete" %>
-<% else %>
-	<%= link_to "Log in", new_session_path %>
-	<%= link_to "Register", new_user_path %>
-<% end %>
+
 
 <%= yield %>
 

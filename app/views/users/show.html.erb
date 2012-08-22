@@ -22,5 +22,17 @@
   <%= @pic.html_safe %>
 </p>
 
+        
+
+<form><div>
+<select name="menu">
+<option value="0" selected>(Escoja uno de los proyectos:)</option>
+<option value="1">ruby</option>
+<option value="2">python</option>
+<option value="3">javascript</option>
+</select>
+<div><input type="button" value="Hacer un Post" onclick="post(this.menu)" /></div>
+</form>
+
 
 <%= link_to 'Back', root_path %>
