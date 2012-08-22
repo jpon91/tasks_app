@@ -35,7 +35,7 @@ if v
 	session[:user_id]=v[:id]
         #return render :text => "que pasa #{v[:email]}"
 
-        redirect_to "/users/#{v[:id]}/", notice: "Welcome#{v[:username]}and#{v[:expires]}"
+        redirect_to "/users/#{v[:id]}/", notice: "Welcome#{v[:username]}and#{cadena}"
         #format.json { render json: v, status: :created, location: v }	
 else
 	redirect_to "/users/", notice: "error"
