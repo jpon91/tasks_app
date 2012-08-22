@@ -38,7 +38,7 @@ if v
         redirect_to "/users/#{v[:id]}/", notice: "Welcome#{v[:expires]}"
         #format.json { render json: v, status: :created, location: v }	
 else
-	return render :text => "hola"
+	redirect_to "/users/", notice: "error"
 end
 
 #return render :text => a
