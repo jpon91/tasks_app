@@ -28,6 +28,8 @@ para[:expires]=expires.to_s
 
   def logged_in?
      	a=current_user
+	if a=nil
+		return nil
 	if((Time.now<=>Time.parse(a[:expires]))==1)
 		return nil
 	else
