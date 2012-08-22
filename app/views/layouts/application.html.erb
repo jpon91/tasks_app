@@ -71,7 +71,6 @@ FB.api('/me/feed', 'post', { message: body }, function(response) {
 <script src="https://connect.facebook.net/en_US/all.js"></script>
 <script type="text/javascript">FB.init();</script>
       
-<div class="fb-login-button">Login with Facebook</div>
 <form>
         <input type="button" value="Post something" onclick="post()" />
     </form>
@@ -88,7 +87,7 @@ FB.api('/me/feed', 'post', { message: body }, function(response) {
 <% end %>
 <% if logged_in? %>
 	<p> Logged in as <%= current_user.email %></p>
-	<%= link_to "Logout", session_path(id:"current"), method: "delete" %>
+	<%= link_to "Logout of grades", session_path(id:"current"), method: "delete" %>
 <% else %>
 	<%= link_to "Log in", new_session_path %>
 	<%= link_to "Register", new_user_path %>
