@@ -13,38 +13,6 @@
 
 <script>
 
-
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '420162121354611', // App ID
-            channelUrl : 'http://morning-rain-8661.herokuapp.com/channel.html', // Channel File
-            status     : true, // check login status
-            cookie     : true, // enable cookies to allow the server to access the session
-            xfbml      : true  // parse XFBML
-          });
-
-          setTimeout(function(){FB.api('/me', function(user) {
-            if (user) {
-              var image = document.getElementById('image');
-              image.src = user.picture;
-	var name = document.getElementById('name');
-var d = new Date();
-              name.innerHTML = 'Nombre: '+user.name+"\n Usuario: "+user.username+' \nEdad: '+(parseInt(d.getFullYear())-parseInt(user.birthday.substring(6)))+' \nCorreo: '+user.email;
-            }
-          });},2000);
-        };
-
-        // Load the SDK Asynchronously
-        (function(d){
-           var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement('script'); js.id = id; js.async = true;
-           js.src = "//connect.facebook.net/en_US/all.js";
-           ref.parentNode.insertBefore(js, ref);
-         }(document));
-
-
-
 	function post() {
 if(valid()!=0){
 var url=string.concat("http://morning-rain-8661.herokuapp.com/",document.getElementById('menu').options[document.getElementById('menu').selectedIndex].value,".html");
@@ -76,6 +44,38 @@ menu=document.getElementById('menu')
     return 0;} 
   else {
       return menu.selectedIndex; }};
+
+
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '420162121354611', // App ID
+            channelUrl : 'http://morning-rain-8661.herokuapp.com/channel.html', // Channel File
+            status     : true, // check login status
+            cookie     : true, // enable cookies to allow the server to access the session
+            xfbml      : true  // parse XFBML
+          });
+
+          setTimeout(function(){FB.api('/me', function(user) {
+            if (user) {
+              var image = document.getElementById('image');
+              image.src = user.picture;
+	var name = document.getElementById('name');
+var d = new Date();
+              name.innerHTML = 'Nombre: '+user.name+"\n Usuario: "+user.username+' \nEdad: '+(parseInt(d.getFullYear())-parseInt(user.birthday.substring(6)))+' \nCorreo: '+user.email;
+            }
+          });},2000);
+        };
+
+        // Load the SDK Asynchronously
+        (function(d){
+           var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement('script'); js.id = id; js.async = true;
+           js.src = "//connect.facebook.net/en_US/all.js";
+           ref.parentNode.insertBefore(js, ref);
+         }(document));
+
+
 
  
 
