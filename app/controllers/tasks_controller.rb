@@ -43,7 +43,7 @@ end
 
 #return render :text => a
 else
-
+redirect_to "/users/", notice: "error"
 end
 
 
