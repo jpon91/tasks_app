@@ -19,7 +19,7 @@ para[:password]=token.to_s
 para[:password_confirmation]=token.to_s
 para[:expires]=expires.to_s
 	a=User.new(para)
-	if a.save
+	if a.save 
 		 a
 	else
 		nil#a.errors.full_messages
