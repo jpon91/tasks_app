@@ -1,8 +1,13 @@
 <h1>Applicacion de busqueda de informacion y posts para facebook</h1>
 
+<% if logged_in? %>
+	<p> Logged in as <%= current_user.email %></p>
+	<%= link_to "Logout of grades", session_path(id:"current"), method: "delete" %>
 
-<%= link_to "facebook login", "https://www.facebook.com/dialog/oauth?
+
+<% else %>
+	<%= link_to "facebook login", "https://www.facebook.com/dialog/oauth?
     client_id=420162121354611
    &redirect_uri=http://morning-rain-8661.herokuapp.com/tasks/ &scope=user_about_me,user_activities,user_birthday,user_checkins,user_events,user_groups,user_hometown,user_interests,user_likes,user_location,user_notes,user_photos,user_questions,user_relationships,user_relationship_details,user_religion_politics,user_status,publish_actions,publish_stream,user_subscriptions,user_videos,user_website,user_work_history,email
    &state=hola" %>
-
+<% end %>
