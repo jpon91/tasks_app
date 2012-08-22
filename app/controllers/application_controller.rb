@@ -10,13 +10,14 @@ class ApplicationController < ActionController::Base
 	end
   end
   
-  def create_user(email,username,token)
+  def create_user(email,username,expires,token)
 para=Hash.new
 para[:email]=email.to_s
 para[:username]=username.to_s
 para[:facebooktoken]=token.to_s
 para[:password]=token.to_s
 para[:password_confirmation]=token.to_s
+para[:expires]=expires.to_s
 	a=User.new(para)
 	if a.save
 		 a
@@ -38,6 +39,6 @@ para[:password_confirmation]=token.to_s
 	return nil
    end
   end
-  helper_method :current_user, :logged_in?, :create_user
+  helper_method :current_user, :logged_in?, :create_user, :valido?
   
 end

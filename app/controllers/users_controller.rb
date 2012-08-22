@@ -32,9 +32,9 @@ a=ActiveSupport::JSON.decode(a)
     @pic=image_tag
     @name=a["name"] 
     @edad=time.to_i-(a["birthday"].to_s)[6..-1].to_i
-url=URI("https://graph.facebook.com/me/gradesdisplay:develop")
-resource = RestClient::Resource.new ((url.to_s))
-a=resource.post :access_token => "#{@user[:facebooktoken]}" , :website => 'http://morning-rain-8661.herokuapp.com/ruby.html'
+#url=URI("https://graph.facebook.com/me/gradesdisplay:develop")
+#resource = RestClient::Resource.new ((url.to_s))
+#a=resource.post :access_token => "#{@user[:facebooktoken]}" , :website => 'http://morning-rain-8661.herokuapp.com/ruby.html'
 #return render :text => "que pasa #{a}"
     respond_to do |format|
       format.html # show.html.erb

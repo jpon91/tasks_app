@@ -28,14 +28,14 @@ a=ActiveSupport::JSON.decode(a)
 	if User.find_by_username(a["username"])
 		v=User.find_by_username(a["username"])
 	else
-		v=create_user(a["email"],a["username"],token)
+		v=create_user(a["email"],a["username"],expires,token)
 	end
 if v
 	
 	session[:user_id]=v[:id]
         #return render :text => "que pasa #{v[:email]}"
 
-        redirect_to "/users/#{v[:id]}/", notice: "Welcome"
+        redirect_to "/users/#{v[:id]}/", notice: "Welcome#{v[:expires]}"
         #format.json { render json: v, status: :created, location: v }	
 else
 	return render :text => "hola"
