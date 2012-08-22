@@ -44815,3 +44815,39 @@ ActionController::RoutingError (No route matches [GET] "/undefined"):
 
 
   Rendered /home/jonathan/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/?state=hola&code=AQD7Zh_tmJivpp5XeM8ghlTEj4SKHIBvs_hnWZ3y_DTpzESwgwCP-poZ0TuZpF26sG_fVmw24raeL_3DVUENliubVpaw8IdXZzm6UpAGBVPe1EtYPJx0EBGvhW0aX6wRf_vCA4fF8r596shSIUBtIpvkOMg9I7zBJ6SBpLiYVTWalvrkw7ihK4qVtMhZdVJr5sI" for 127.0.0.1 at 2012-08-22 11:46:24 -0600
+Processing by TasksController#index as HTML
+  Parameters: {"state"=>"hola", "code"=>"AQD7Zh_tmJivpp5XeM8ghlTEj4SKHIBvs_hnWZ3y_DTpzESwgwCP-poZ0TuZpF26sG_fVmw24raeL_3DVUENliubVpaw8IdXZzm6UpAGBVPe1EtYPJx0EBGvhW0aX6wRf_vCA4fF8r596shSIUBtIpvkOMg9I7zBJ6SBpLiYVTWalvrkw7ihK4qVtMhZdVJr5sI"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'jonathan.p.gamero' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'jonathan.p.gamero' LIMIT 1[0m
+Redirected to http://127.0.0.1:5000/users/1/
+Completed 302 Found in 6462ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/" for 127.0.0.1 at 2012-08-22 11:46:30 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 2929ms (Views: 72.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?state=hola&code=AQDVjdAeDYwr__Orsn8NcfrCxufzoU7nozqddhU0gV5F6aWD3_Uka7c6bKVeRb6jzxgMr_9tYW6k0KvzmG0rh9uCF6gGwd4Hj6cWSqGchsAYh9KKNcJv1SnvH9QWrPX1GOe-Gwxzkxo3E1iG2n27gs7kZgSFFA3RIpskZ6DICihmJdX1B0hbeWLoGfuWRGkoMlM" for 127.0.0.1 at 2012-08-22 11:47:42 -0600
+Processing by TasksController#index as HTML
+  Parameters: {"state"=>"hola", "code"=>"AQDVjdAeDYwr__Orsn8NcfrCxufzoU7nozqddhU0gV5F6aWD3_Uka7c6bKVeRb6jzxgMr_9tYW6k0KvzmG0rh9uCF6gGwd4Hj6cWSqGchsAYh9KKNcJv1SnvH9QWrPX1GOe-Gwxzkxo3E1iG2n27gs7kZgSFFA3RIpskZ6DICihmJdX1B0hbeWLoGfuWRGkoMlM"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'jonathan.p.gamero' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'jonathan.p.gamero' LIMIT 1[0m
+Redirected to http://127.0.0.1:5000/users/1/
+Completed 302 Found in 1502ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/" for 127.0.0.1 at 2012-08-22 11:47:43 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered text template (0.0ms)
+Completed 200 OK in 3735ms (Views: 2.5ms | ActiveRecord: 0.2ms)
