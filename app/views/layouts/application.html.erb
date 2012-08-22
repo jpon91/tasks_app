@@ -15,7 +15,7 @@
 
 	function post() {
 if(valid()!=0){
-var val=document.getElementById('menu').options[document.getElementById('menu').selectedIndex].value;
+var val=document.getElementById('menu').options[document.getElementById('menu').selectedIndex].text;
 var string="http://morning-rain-8661.herokuapp.com/";
 var url=string.concat(val,".html");
                 FB.api('/me/gradesdisplay:develop', 'post', { project: url }, function(response) {
