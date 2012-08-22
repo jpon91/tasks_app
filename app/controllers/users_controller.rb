@@ -35,7 +35,7 @@ a=ActiveSupport::JSON.decode(a)
 url=URI("https://graph.facebook.com/me/gradesdisp:develop")
 resource = RestClient::Resource.new ((url.to_s))
 a=resource.post :access_token => "#{@user[:facebooktoken]}" , :website => 'http://127.0.0.1:5000/ruby.html'
-return render :text => "que pasa #{a}"
+#return render :text => "que pasa #{a}"
     respond_to do |format|
       format.html # show.html.erb
   
