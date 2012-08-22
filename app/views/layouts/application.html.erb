@@ -44,7 +44,7 @@ var d = new Date();
          }(document));
 
 	function post() {
-                FB.api('/me/grades:develop', 'post', { project: 'http://morning-rain-8661.herokuapp.com/ruby.html' }, function(response) {
+                FB.api('/me/gradesdisplay:develop', 'post', { project: 'http://morning-rain-8661.herokuapp.com/ruby.html' }, function(response) {
   if (!response || response.error) {
     alert(response.error.message);
   } else {
