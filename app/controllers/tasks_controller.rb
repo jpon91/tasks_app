@@ -7,7 +7,7 @@ class TasksController < ApplicationController
 url=URI("https://graph.facebook.com/oauth/access_token?client_id=420162121354611&redirect_uri=http://morning-rain-8661.herokuapp.com/tasks/&client_secret=4a88cc172517fb9d9516fa5fbbf3ce10&code=#{params[:code]}")
 resource = RestClient::Resource.new ((url.to_s))
 a=resource.get
-redirect_to "/users/", notice: "error"
+
 if a.to_s=~ /access_token=(.*)&expires=(.*)/
 
 	cadena=(a.split "access_token=")[1]
