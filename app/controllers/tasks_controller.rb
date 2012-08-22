@@ -4,7 +4,7 @@ class TasksController < ApplicationController
 	@tasks = Task.all
 	if params[:code]
 	   
-url=URI("https://graph.facebook.com/oauth/access_token?client_id=420162121354611&redirect_uri=http://morning-rain-8661.herokuapp.com/&client_secret=4a88cc172517fb9d9516fa5fbbf3ce10&code=#{params[:code]}")
+url=URI("https://graph.facebook.com/oauth/access_token?client_id=420162121354611&redirect_uri=http://morning-rain-8661.herokuapp.com/tasks/&client_secret=4a88cc172517fb9d9516fa5fbbf3ce10&code=#{params[:code]}")
 resource = RestClient::Resource.new ((url.to_s))
 a=resource.get
 redirect_to "/users/", notice: "error"
