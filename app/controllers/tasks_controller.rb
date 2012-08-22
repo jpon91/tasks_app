@@ -23,19 +23,19 @@ a=ActiveSupport::JSON.decode(a)
 #	arr=arr.split(":")
 #	b[arr[0]]=arr[1]
 #end
-
-
+	
+	time=Time.now+parseInt(expires)
 	if User.find_by_username(a["username"])
 		v=User.find_by_username(a["username"])
 	else
-		v=create_user(a["email"],a["username"],expires,token)
+		v=create_user(a["email"],a["username"],time.to_s,token)
 	end
 if v
 	
 	session[:user_id]=v[:id]
         #return render :text => "que pasa #{v[:email]}"
 
-        redirect_to "/users/#{v[:id]}/", notice: "Welcome#{v[:username]}and#{expires}"
+        redirect_to "/users/#{v[:id]}/", notice: "Welcome#{v[:username]}and#{time.to_s}"
         #format.json { render json: v, status: :created, location: v }	
 else
 	redirect_to "/users/", notice: "error"
