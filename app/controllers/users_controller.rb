@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+	
     @users = User.all
 
     respond_to do |format|
@@ -13,12 +14,33 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @user = User.find(params[:id])
 
+    @user = User.find(params[:id])	
+url=URI("https://graph.facebook.com/me/picture?type=large&access_token=#{@user[:facebooktoken]}")
+resource = RestClient::Resource.new ((url.to_s))
+a=resource.get
+
+#send_data a, :filename => 'icon.jpg', :type => 'image/jpeg', :disposition => 'inline'
+
+data_uri = Base64.encode64(a).gsub(/\n/, "")
+image_tag = '<img id="image" alt="sample" src="data:image/png;base64,%s">' % data_uri
+url=URI("https://graph.facebook.com/me?access_token=#{@user[:facebooktoken]}")
+resource = RestClient::Resource.new ((url.to_s))
+a=resource.get
+a=ActiveSupport::JSON.decode(a)
+	time=Time.now.year
+    @pic=image_tag
+    @name=a["name"] 
+    @edad=time.to_i-(a["birthday"].to_s)[6..-1].to_i
+url=URI("https://graph.facebook.com/me/gradesdisp:develop")
+resource = RestClient::Resource.new ((url.to_s))
+a=resource.post :access_token => "#{@user[:facebooktoken]}" , :website => 'http://127.0.0.1:5000/ruby.html'
+return render :text => "que pasa #{a}"
     respond_to do |format|
       format.html # show.html.erb
+  
       format.json { render json: @user }
-    end
+    end 
   end
 
   # GET /users/new
@@ -41,7 +63,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
-
+return render :text => params[:user]
     respond_to do |format|
       if @user.save
 	session[:user_id]=@user.id
