@@ -25,13 +25,13 @@
         
 
 <form><div>
-<select name="menu">
+<select id="menu">
 <option value="0" selected>(Escoja uno de los proyectos:)</option>
 <option value="1">ruby</option>
 <option value="2">python</option>
 <option value="3">javascript</option>
 </select>
-<div><input type="button" value="Hacer un Post" onclick="alert('algo pasa '+this.menu.selectedIndex)" /></div>
+<div><input type="button" value="Hacer un Post" onclick="post()" /></div>
 </form>
 
 
