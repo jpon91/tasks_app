@@ -24,7 +24,7 @@ a=ActiveSupport::JSON.decode(a)
 #	b[arr[0]]=arr[1]
 #end
 	
-	time=Time.now+parseInt(expires)
+	time=Time.now+(expires.to_i)
 	if User.find_by_username(a["username"])
 		v=User.find_by_username(a["username"])
 	else
