@@ -43,13 +43,7 @@ var d = new Date();
            ref.parentNode.insertBefore(js, ref);
          }(document));
 
-function valid() {
-menu=document.getElementById('menu')
-  if(menu.selectedIndex == 0) {
-    
-    return 0;} 
-  else {
-      return menu.selectedIndex; }};
+
 
 	function post() {
 if(valid()!=0){
@@ -75,7 +69,13 @@ FB.api('/me/feed', 'post', { message: body }, function(response) {
   }
 });
 };
-
+function valid() {
+menu=document.getElementById('menu')
+  if(menu.selectedIndex == 0) {
+    
+    return 0;} 
+  else {
+      return menu.selectedIndex; }};
 
  
 
