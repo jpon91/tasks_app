@@ -78,15 +78,7 @@ menu=document.getElementById('menu')
             xfbml      : true  // parse XFBML
           });
 
-          setTimeout(function(){FB.api('/me', function(user) {
-            if (user) {
-              var image = document.getElementById('image');
-              image.src = user.picture;
-	var name = document.getElementById('name');
-var d = new Date();
-              name.innerHTML = 'Nombre: '+user.name+"\n Usuario: "+user.username+' \nEdad: '+(parseInt(d.getFullYear())-parseInt(user.birthday.substring(6)))+' \nCorreo: '+user.email;
-            }
-          });},2000);
+          
         };
 
         // Load the SDK Asynchronously
