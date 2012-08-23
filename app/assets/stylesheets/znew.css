@@ -1,0 +1,289 @@
+@font-face {
+font-family: twitter_font;
+src: url(/fonts/twit.ttf);
+font-style:normal; font-weight:200;
+}
+.flash{
+	color:green;
+}
+body {
+ font-family: twitter_font,sans-serif; 
+ }
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+
+    font-size: 90%;
+    margin: 0;
+    min-width: 600px;
+    padding: 0;
+    width: 100%;
+}
+a {
+    color: #336699;
+	width: 100%;
+  height: 80%;
+}
+
+
+h1, h2, h3 {
+    margin: 0.8em 0 0.2em;
+    padding: 0;
+}
+p {
+    margin: 0.4em 0 0.8em;
+    padding: 0;
+}
+img {
+    margin: 10px 0 5px;
+}
+#header {
+    border-bottom: 1px solid #000000;
+	overflow: hidden;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#header p {
+    margin: 0;
+    padding: 0.5em 15px 0.2em;
+}
+#header h1 {
+    margin: 0;
+    padding: 0.2em 15px;
+}
+#header h2 {
+    margin: 0;
+    padding: 0.2em 15px 0.7em;
+}
+#colmask {
+    background: none no-repeat scroll 100 100 #94CEDE;
+	background-image:url('izquierda.png');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:0% 100%; 
+    clear: both;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#colmid {
+    background: none repeat scroll 0 0 #FFFFFF;
+	-moz-border-radius: 15px;
+border-radius: 15px;
+-o-border-radius: 15px;
+-webkit-border-top-left-radius:15px; /* top left corner */
+-webkit-border-top-right-radius:15px; /* top right corner */
+-webkit-border-bottom-left-radius:15px; /* bottom left corner */
+-webkit-border-bottom-right-radius:15px;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+    float: left;
+    left: 200px;
+    position: relative;
+    width: 200%;
+}
+#colright {
+    background: none repeat scroll 0 0 #94CEDE;
+	background-image:url('derecha.png');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:100% 100%; 
+    float: left;
+    left: 50%;
+    margin-left: -400px;
+    position: relative;
+    width: 100%;
+}
+#col1wrap {
+
+    float: right;
+    position: relative;
+    right: 100%;
+    width: 50%;
+}
+#col1pad {
+    margin: 0 15px 0 415px;
+    overflow: hidden;
+}
+#col1 {
+    overflow: hidden;
+    width: 100%;
+}
+#col2 {
+    float: left;
+    left: 215px;
+    margin-left: -50%;
+    overflow: hidden;
+    position: relative;
+    width: 170px;
+}
+#col3 {
+    float: left;
+    left: 15px;
+    overflow: hidden;
+    position: relative;
+    width: 170px;
+}
+#footer {
+    border-top: 1px solid #000000;
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#footer p {
+    padding: 0.5em 15px;
+}
+table{
+border-collapse:collapse;
+}
+span{
+font-size:0.5em;
+}
+table,th,td{
+border: 2px solid #37f; 
+}
+th{
+background:#1B1EE0;
+}
+tr{
+background:#94C0F2;
+}
+tr:nth-child(2n+1){
+background:#308BF2;
+}
+
+
+a:link,a:visited
+{
+display:inline;
+font-weight:bold;
+/*background-color:#C70434;*/
+color:#3A0596;
+width: 100%;
+  height: 80%;
+text-align:center;
+padding:4px;
+text-decoration:none;
+}
+
+.menulinks a {
+    color: #1725BF;
+	width: 100%;
+  height: 80%;
+	/*background-color: #2161CF;*/
+}
+.menulinks .redondo:hover {
+    background: none repeat scroll 0 0 none;
+    color: #0F1669;
+    text-decoration: none;
+width: 100%;
+  height: 80%;
+
+-o-border-radius: 1em;
+-webkit-border-top-left-radius:1em; /* top left corner */
+-webkit-border-top-right-radius:3em; /* top right corner */
+-webkit-border-bottom-left-radius:1em; /* bottom left corner */
+-webkit-border-bottom-right-radius:3em;
+border-top-right-radius: 3em;
+border-top-left-radius: 1em;
+border-bottom-right-radius: 3em;
+border-bottom-left-radius: 1em;
+	-moz-border-radius: 1em 3em 1em 3em;
+border-radius: 1em 3em 1em 3em;
+
+/* IE10 */ 
+background-image: -ms-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D98EF', endColorstr='#FFFFFF');
+
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5D98EF), color-stop(1, #FFFFFF));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+
+/* Proposed W3C Markup */ 
+background-image: linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+width: 100%;
+  height: 80%;
+}
+ul
+{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+.redondo{
+float:left;
+background-color:#678EB5;
+
+
+
+-o-border-radius: 1em;
+-webkit-border-top-left-radius:1em; /* top left corner */
+-webkit-border-top-right-radius:3em; /* top right corner */
+-webkit-border-bottom-left-radius:1em; /* bottom left corner */
+-webkit-border-bottom-right-radius:3em;
+border-top-right-radius: 3em;
+border-top-left-radius: 1em;
+border-bottom-right-radius: 3em;
+border-bottom-left-radius: 1em;
+-moz-border-radius: 1em 3em 1em 3em;
+border-radius: 1em 3em 1em 3em;
+
+}
+
+
+buttons {
+  width: 300px;
+  height: 100px;
+  border: solid #EEE;
+  
+}
+buttons a{
+	background-color:none;
+	display: block;
+  width: 100%;
+  height: 80%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+#m{
+background-color:none;
+	display: block !important;
+  width: 100% !important;
+  height: 80% !important;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+
+
+li 
+{
+
+background-image:url('http://www.w3schools.com/favicon.ico');
+
+background-repeat:no-repeat;
+background-position:0px 0px; 
+padding-left:25px;
+}
+body {
+ font-family: twitter_font,sans-serif !important; 
+ }
