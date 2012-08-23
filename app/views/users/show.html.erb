@@ -2,6 +2,7 @@
 <script type="text/javascript">
    var user_id = <%= @userid %>;
 setTimeout(function(){FB.api('/me', function(user) {
+	isLoggedIn(user_id);
             if (user) {
               var image = document.getElementById('image');
               image.src = user.picture;
@@ -54,5 +55,3 @@ var d = new Date();
 	 <div id="name"></div>
       </div>
 
-<%= link_to 'Back', root_path %>
-<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete",:id => 'logout' %>

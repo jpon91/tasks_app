@@ -214,15 +214,15 @@ border-bottom-left-radius: 1em;
 border-radius: 1em 3em 1em 3em;
 
 /* IE10 */ 
-background-image: -ms-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+background-image: -ms-linear-gradient(top, #000 0%, #FFFFFF 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5D98EF', endColorstr='#FFFFFF');
 
 
 /* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+background-image: -moz-linear-gradient(top, #000 0%, #FFFFFF 100%);
 
 /* Opera */ 
-background-image: -o-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+background-image: -o-linear-gradient(top, #000 0%, #FFFFFF 100%);
 
 /* Webkit (Safari/Chrome 10) */ 
 background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(1, #FFFFFF));
@@ -231,7 +231,7 @@ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, 
 background-image: -webkit-linear-gradient(top, #000 0%, #FFFFFF 100%);
 
 /* Proposed W3C Markup */ 
-background-image: linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+background-image: linear-gradient(top, #000 0%, #FFFFFF 100%);
 width: 100%;
   height: 80%;
 }
@@ -263,7 +263,7 @@ border-radius: 1em 3em 1em 3em;
 
 .redondo:hover{
 float:left;
-background-color:#678EB5;
+background-color:#A4A4A4;
 
 
 

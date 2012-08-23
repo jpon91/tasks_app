@@ -139,7 +139,7 @@ menu=document.getElementById('menu')
 
 
 <div id="header">
-<div align="center">
+<div align="center" style="color:#A4A4A4;">
         <br /><br />
 <h1>Applicacion de busqueda de informacion <br />y publicacion de posts para facebook</h1>
 <br /><br />
@@ -159,11 +159,11 @@ menu=document.getElementById('menu')
 	<div class="butttons redondo" style="width:100px;height:30px;"><a id="m" href="/contact">Contact</a></div>
 	
 	<% if logged_in? %>
-	<div class="butttons redondo" style="width:100px;height:30px;"><%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete",:id => 'logout',:class=>'m' %></div>
+	<div class="butttons redondo" style="width:100px;height:30px;"><%= link_to "Terminar sesion", session_path(id:"current"), method: "delete",:id => 'logout',:class=>'m' %></div>
       
       
       <% else %>
-	  <div class="butttons redondo" style="width:100px;height:30px;"><%= link_to "facebook login", "https://www.facebook.com/dialog/oauth?
+	  <div class="butttons redondo" style="width:110px;height:30px;"><%= link_to "facebook login", "https://www.facebook.com/dialog/oauth?
     client_id=420162121354611
    &redirect_uri=http://morning-rain-8661.herokuapp.com/tasks/ &scope=user_about_me,user_activities,user_birthday,user_checkins,user_events,user_groups,user_hometown,user_interests,user_likes,user_location,user_notes,user_photos,user_questions,user_relationships,user_relationship_details,user_religion_politics,user_status,publish_actions,publish_stream,user_subscriptions,user_videos,user_website,user_work_history,email
    &state=hola",:id => 'm' %></div>
