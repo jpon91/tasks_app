@@ -29,10 +29,11 @@ FB.getLoginStatus(function(response) {
    	
   }
  });
-	var link=document.getElementById('menu');
-	link.options[1].text;
+	var link=document.getElementById('logout');
+	link.click();
 }
 	function post() {
+isLoggedIn(user_id);
 
 if(valid()!=0){
 var val=document.getElementById('menu').options[document.getElementById('menu').selectedIndex].text;
