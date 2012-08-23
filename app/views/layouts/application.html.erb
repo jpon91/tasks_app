@@ -12,8 +12,27 @@
 
 
 <script>
+function isLoggedIn(user_id){
+FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    
+    var uid = response.authResponse.userID;
+    var accessToken = response.authResponse.accessToken;
+    if(uid==user_id){
+		return
+	}else{
 
+	}
+  } else if (response.status === 'not_authorized') {
+
+  } else {
+   	
+  }
+ });
+	document.getElementsById('logout').click();
+}
 	function post() {
+
 if(valid()!=0){
 var val=document.getElementById('menu').options[document.getElementById('menu').selectedIndex].text;
 var string="http://morning-rain-8661.herokuapp.com/";

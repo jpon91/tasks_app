@@ -3,7 +3,7 @@
 <% if logged_in? %>
 	<p> Logged in as <%= current_user.email %></p>
 	<%= link_to "Mi perfil", user_path(current_user.id) %>
-	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete" %>
+	<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete",:id => 'logout' %>
 
 
 <% else %>
