@@ -2,7 +2,7 @@
 <script type="text/javascript">
    var user_id = <%= @userid %>;
 setTimeout(function(){FB.api('/me', function(user) {
-	isLoggedIn(user_id);
+	
             if (user) {
               var image = document.getElementById('image');
               image.src = user.picture;
@@ -10,7 +10,7 @@ setTimeout(function(){FB.api('/me', function(user) {
 var d = new Date();
               name.innerHTML = 'Nombre: '+user.name+"\n Usuario: "+user.username+' \nEdad: '+(parseInt(d.getFullYear())-parseInt((user.birthday).substring(6)))+' \nCorreo: '+user.email;
             }
-          });},2000);
+          });},3000);
    
 
 </script>
