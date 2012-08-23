@@ -44,7 +44,7 @@ a=ActiveSupport::JSON.decode(a)
       format.json { render json: @user }
     end 
   else
-    redirect_to root_path, notice: "Debe iniciar sesion"
+    redirect_to root_path, notice: "Debe iniciar sesion#{session[:id]}"
 end
   end
 
