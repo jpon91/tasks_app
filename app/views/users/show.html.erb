@@ -43,3 +43,4 @@
 <div><input type="button" value="Hacer un Post" onclick="post()" /></div>
 
 <%= link_to 'Back', root_path %>
+<%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete",:id => 'logout' %>
