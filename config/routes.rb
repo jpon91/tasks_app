@@ -4,7 +4,11 @@ Tasks::Application.routes.draw do
   get "sessions/new"
 
   resources :users
+get "pages/about"
 
+  get "pages/contact"
+   match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
 resources :tasks
 resources :sessions
 root to: "users#index"
