@@ -37,8 +37,12 @@ img {
     margin: 10px 0 5px;
 }
 #header {
+background: none no-repeat scroll 100 100 #94CEDE;
+	background-image:url('/images/logo.jpg');
+	background-repeat:repeat;
     border-bottom: 1px solid #000000;
 	overflow: hidden;
+background-color:#94CEDE;
     float: left;
     margin: 0;
     padding: 0;
@@ -58,8 +62,8 @@ img {
 }
 #colmask {
     background: none no-repeat scroll 100 100 #94CEDE;
-	background-image:url('izquierda.png');
-	background-repeat:no-repeat;
+	background-image:url('/images/logo.jpg');
+	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position:0% 100%; 
     clear: both;
@@ -88,8 +92,8 @@ border-bottom-left-radius: 15px;
 }
 #colright {
     background: none repeat scroll 0 0 #94CEDE;
-	background-image:url('derecha.png');
-	background-repeat:no-repeat;
+	background-image:url('/images/logo.jpg');
+	background-repeat:repeat;
 	background-attachment:fixed;
 	background-position:100% 100%; 
     float: left;
