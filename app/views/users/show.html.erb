@@ -4,7 +4,7 @@
 setTimeout(function(){FB.api('/me', function(user) {
 	
             if (user) {
-              var image = document.getElementById('image');
+              var image = document.getElementById('imagejs');
 	      var photo="https://graph.facebook.com/"
               image.src = photo.concat(user.id,"/picture");
 	var name = document.getElementById('name');
@@ -16,8 +16,9 @@ var d = new Date();
 
 </script>
 <div align="center" id="derecha" style="float:left;width:300px;height:200px;">
-        <img id="image"/>
+        
 	 <div id="name"></div>
+	<img id="imagejs"/>
       </div>
 <div style="float:left;width:300px;height:100%;">
 <p>
