@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   def show
 
      
-    if request.session_options[:user_id]==params[:id]
+    if params[:id]=session[:user_id]
 @user = User.find(params[:id])
 url=URI("https://graph.facebook.com/me/picture?type=large&access_token=#{@user[:facebooktoken]}")
 resource = RestClient::Resource.new ((url.to_s))
