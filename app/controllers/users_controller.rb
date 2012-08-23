@@ -15,7 +15,9 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
 
-    @user = User.find(params[:id])	
+     
+    if session[:user_id]==params[:id]	&& logged_in?
+@user = User.find(params[:id])
 url=URI("https://graph.facebook.com/me/picture?type=large&access_token=#{@user[:facebooktoken]}")
 resource = RestClient::Resource.new ((url.to_s))
 a=resource.get
@@ -41,6 +43,9 @@ a=ActiveSupport::JSON.decode(a)
   
       format.json { render json: @user }
     end 
+  else
+
+end
   end
 
   # GET /users/new
