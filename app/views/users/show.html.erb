@@ -9,7 +9,7 @@ setTimeout(function(){FB.api('/me', function(user) {
               image.src = photo.concat(user.id,"/picture");
 	var name = document.getElementById('name');
 var d = new Date();
-var newHTML = "<br></br>";
+var newhtml = "<br></br>";
               name.innerHTML = 'Nombre: '+user.name+newhtml+"Usuario: "+user.username+newhtml+'Edad: '+(parseInt(d.getFullYear())-parseInt((user.birthday).substring(6)))+newhtml+'Correo: '+user.email+"Photo: "+newhtml;
             }
           });},3000);
