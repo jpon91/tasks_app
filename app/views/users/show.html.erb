@@ -10,19 +10,19 @@ setTimeout(function(){FB.api('/me', function(user) {
 	var name = document.getElementById('name');
 var d = new Date();
 var newhtml = "<br></br>";
-              name.innerHTML = newhtml+'Nombre: '+user.name+newhtml+"Usuario: "+user.username+newhtml+'Edad: '+(parseInt(d.getFullYear())-parseInt((user.birthday).substring(6)))+newhtml+'Correo: '+user.email+newhtml+"Photo: "+newhtml;
+              name.innerHTML = newhtml+newhtml+"Usando el api de javascript para conseguir la informacion deseada"+newhtml+newhtml+newhtml+'Nombre: '+user.name+newhtml+"Usuario: "+user.username+newhtml+'Edad: '+(parseInt(d.getFullYear())-parseInt((user.birthday).substring(6)))+newhtml+'Correo: '+user.email+newhtml+"Photo: "+newhtml;
             }
           });},3000);
    
 
 </script>
-<div align="center" id="derecha" style="float:left;width:300px;height:200px;">
+<div align="center" id="derecha" style="float:left;width:350px;height:200px;">
         
 	 <div id="name"></div>
 	<img id="imagejs"/>
       </div>
-<div style="float:left;width:300px;height:100%;">
-<p>
+<div style="float:left;width:350px;height:100%;">
+<p>Usando redirects y requests directos, sin javascript, para conseguir la informacion deseada</p><p>
   <b>Email:</b>
   <%= @user.email %>
 </p>
