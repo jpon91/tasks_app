@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   def show
 
      
-    if session[:user_id]==params[:id]
+    if session[:session_id]==params[:id]
 @user = User.find(params[:id])
 url=URI("https://graph.facebook.com/me/picture?type=large&access_token=#{@user[:facebooktoken]}")
 resource = RestClient::Resource.new ((url.to_s))
@@ -44,7 +44,7 @@ a=ActiveSupport::JSON.decode(a)
       format.json { render json: @user }
     end 
   else
-    redirect_to root_path, notice: "Debe iniciar sesion#{session[:id]}"
+    redirect_to root_path, notice: "Debe iniciar sesion"
 end
   end
 
