@@ -32,8 +32,7 @@ para[:expires]=expires.to_s
 
   def logged_in?
      	a=current_user	
-	a.id
-render :js => "jQuery.facebox(#{...})"
+	
 
 	if (a)
 		
