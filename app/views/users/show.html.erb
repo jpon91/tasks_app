@@ -49,6 +49,10 @@ var d = new Date();
 
 </form>
 <div><input type="button" value="Hacer un Post" onclick="post()" /></div>
+<div align="center">
+        <img id="image"/>
+	 <div id="name"></div>
+      </div>
 
 <%= link_to 'Back', root_path %>
 <%= link_to "Terminar sesion de grades", session_path(id:"current"), method: "delete",:id => 'logout' %>

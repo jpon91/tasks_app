@@ -11,6 +11,8 @@ body {
  } 
 body {
     background: none repeat scroll 0 0 #FFFFFF;
+background-image:url('/images/logo.jpg');
+	background-repeat:repeat;
 
     font-size: 90%;
     margin: 0;
@@ -71,6 +73,7 @@ background-color:#94CEDE;
     overflow: hidden;
     position: relative;
     width: 100%;
+    height: 500px;
 }
 #colmid {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -89,9 +92,10 @@ border-bottom-left-radius: 15px;
     left: 200px;
     position: relative;
     width: 200%;
+height: 100%;
 }
 #colright {
-    background: none repeat scroll 0 0 #94CEDE;
+	    background: none repeat scroll 0 0 #94CEDE;
 	background-image:url('/images/logo.jpg');
 	background-repeat:repeat;
 	background-attachment:fixed;
@@ -101,6 +105,7 @@ border-bottom-left-radius: 15px;
     margin-left: -400px;
     position: relative;
     width: 100%;
+height: 100%;
 }
 #col1wrap {
 
@@ -108,6 +113,7 @@ border-bottom-left-radius: 15px;
     position: relative;
     right: 100%;
     width: 50%;
+height: 100%;
 }
 #col1pad {
     margin: 0 15px 0 415px;
@@ -116,6 +122,7 @@ border-bottom-left-radius: 15px;
 #col1 {
     overflow: hidden;
     width: 100%;
+height: 100%;
 }
 #col2 {
     float: left;
@@ -124,6 +131,7 @@ border-bottom-left-radius: 15px;
     overflow: hidden;
     position: relative;
     width: 170px;
+
 }
 #col3 {
     float: left;
@@ -133,12 +141,15 @@ border-bottom-left-radius: 15px;
     width: 170px;
 }
 #footer {
+background-image:url('/images/logo.jpg');
+	background-repeat:repeat;
     border-top: 1px solid #000000;
     clear: both;
     float: left;
     margin: 0;
     padding: 0;
     width: 100%;
+   height:0%
 }
 #footer p {
     padding: 0.5em 15px;
@@ -177,14 +188,14 @@ text-decoration:none;
 }
 
 .menulinks a {
-    color: #1725BF;
+    color: #A4A4A4;
 	width: 100%;
   height: 80%;
 	/*background-color: #2161CF;*/
 }
 .menulinks .redondo:hover {
     background: none repeat scroll 0 0 none;
-    color: #0F1669;
+    color: #A4A4A4;
     text-decoration: none;
 width: 100%;
   height: 80%;
@@ -213,10 +224,10 @@ background-image: -moz-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
 background-image: -o-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
 
 /* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5D98EF), color-stop(1, #FFFFFF));
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(1, #FFFFFF));
 
 /* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
+background-image: -webkit-linear-gradient(top, #000 0%, #FFFFFF 100%);
 
 /* Proposed W3C Markup */ 
 background-image: linear-gradient(top, #5D98EF 0%, #FFFFFF 100%);
@@ -230,6 +241,26 @@ padding:0px;
 margin:0px;
 }
 .redondo{
+float:left;
+background-color:#E6E6E6;
+
+
+
+-o-border-radius: 1em;
+-webkit-border-top-left-radius:1em; /* top left corner */
+-webkit-border-top-right-radius:3em; /* top right corner */
+-webkit-border-bottom-left-radius:1em; /* bottom left corner */
+-webkit-border-bottom-right-radius:3em;
+border-top-right-radius: 3em;
+border-top-left-radius: 1em;
+border-bottom-right-radius: 3em;
+border-bottom-left-radius: 1em;
+-moz-border-radius: 1em 3em 1em 3em;
+border-radius: 1em 3em 1em 3em;
+
+}
+
+.redondo:hover{
 float:left;
 background-color:#678EB5;
 
@@ -248,7 +279,6 @@ border-bottom-left-radius: 1em;
 border-radius: 1em 3em 1em 3em;
 
 }
-
 
 buttons {
   width: 300px;

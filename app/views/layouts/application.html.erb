@@ -103,10 +103,6 @@ menu=document.getElementById('menu')
       
 
 
-<div align="center">
-        <img id="image"/>
-	 <div id="name"></div>
-      </div>
 
 
 
@@ -143,12 +139,15 @@ menu=document.getElementById('menu')
 
 
 <div id="header">
-<br /><br />
+<div align="center">
+        <br /><br />
 <h1>Applicacion de busqueda de informacion <br />y publicacion de posts para facebook</h1>
 <br /><br />
+      </div>
+
 	
 
-	<div class="menulinks" style="position:relative;left:20%;">
+	<div class="menulinks" align="center" style="position:relative;left:30%;">
 
 	<div class="butttons redondo" style="width:100px;height:30px;"><a id="m" href="/">Home</a></div>
 	<% if logged_in? %>
@@ -184,6 +183,8 @@ menu=document.getElementById('menu')
 							<div class="flash <%= key %>"><%= value %></div>
 							<% end %>
 							<%= yield %>
+							
+
 						<!-- Column 1 end -->
 					</div>
 				</div>
@@ -192,35 +193,13 @@ menu=document.getElementById('menu')
 			<div id="col2">
 				<!-- Column 2 start -->
 				<!--< render 'posts/form2' %>-->
-    
-    <div class="list">
-    <dl>
-   <dt>My Interests are</dt>
-   <dd>
-    <ul>
-     <li>Playing Guitar</li>
-     <li>Watching Tv
-     <ul>
-     <li>Friends</li>
-     <li>the big Bang theory</li>
-     <li>30 rock</li>
-     </ul></li>
-     <li>Eating</li>
-     <li>Going to the movies</li>
-   </ul>
-   </dd>
-</dl>
-	</div>
+   
 	
 				<!-- Column 2 end -->
 			</div>
 			<div id="col3">
 				<!-- Column 3 start -->
-				<h3>Things I do not understand about this layout</h3>
-				<p>Why is there a mixture of percentage and pixel based layout, why does it have so many diferent divs, do they control the text or just the background. I beleive that things are moed by pixels to fit column width, but if that is the case then why is the width expressed, cant you just leave it pixel based. The percentage base is all crazy i set it at 100 percent but its like 20 % which i dont understand cause percentages are abslute!! </p>
-				<h3>Things I do understand about this layout</h3>
-				<p>Not much, i understand that there are different divs cause if not the backgrounds would overlap, that the mid column has been moved by 200 pixels to the right to fit the first column and that the third column is moved to the left by -400 pixels for the same reason, to move it to 200 pixels to the right of the screen but why cant you set it to 200 pixels right i dont know. I dont understan how the percentages are calculated!!!! i thought it was the percent of the father component, which is not the way things are working here, at least i think so. The third column is 100% of the mid one so it should be the same size shouldnt it!!! The backgrounds i think at least i get them, the col mask is backround of the whole page, its the real one i think, and it affects the left column cause it is the one thats directly on the page and not moved.
-				</p>
+				
 				<!-- Column 3 end -->
 
 			</div>
