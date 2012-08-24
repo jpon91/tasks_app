@@ -21,6 +21,7 @@ FB.getLoginStatus(function(response) {
     var uid = response.authResponse.userID;
     var accessToken = response.authResponse.accessToken;
     if(uid==user_id){
+	alert("hola"+uid+" "+user_id);
 		return;
 	}else{
 
