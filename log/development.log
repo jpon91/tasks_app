@@ -52540,3 +52540,1160 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 15:37:20 -0600
 Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:29:56 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+Compiled znew.css  (0ms)  (pid 7307)
+Compiled application.css  (3ms)  (pid 7307)
+Completed 200 OK in 215ms (Views: 102.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /application.css - 200 OK (77ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /tasks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /znew.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /tasks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:29:57 -0600
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /sessions.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:03 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:30:07 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:33:32 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /users.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /znew.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:33:33 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:18 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:21 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /tasks.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:24 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /tasks.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:26 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:27 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /znew.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:34:34 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:50:26 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Compiled znew.css  (0ms)  (pid 7307)
+Compiled application.css  (2ms)  (pid 7307)
+Completed 200 OK in 86ms (Views: 83.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /znew.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:27 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /sessions.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /tasks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:50:29 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Compiled znew.css  (0ms)  (pid 7307)
+Compiled application.css  (2ms)  (pid 7307)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /znew.css - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /users.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:27 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /tasks.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:36 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /tasks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /sessions.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:38 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:51:39 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /znew.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:36 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-23 21:53:37 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:37 -0600
+Served asset /application.css - 304 Not Modified (70ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /tasks.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /znew.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:39 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /users.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/znew.css?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /znew.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-23 21:53:40 -0600
+Served asset /application.js - 304 Not Modified (2ms)

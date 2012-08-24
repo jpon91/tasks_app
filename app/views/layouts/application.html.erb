@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tasks</title>
+  <title>Facebook Login</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -49,7 +49,7 @@ var string="http://morning-rain-8661.herokuapp.com/";
 var url=string.concat(val,".html");
                 FB.api('/me/gradesdisplay:develop', 'post', { project: url }, function(response) {
   if (!response || response.error) {
-    alert(response.error.message);
+    //alert(response.error.message);
   } else {
     //alert('Post ID: ' + response.id);
   }
@@ -112,38 +112,6 @@ menu=document.getElementById('menu')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="header">
 <div align="center" style="color:#A4A4A4;">
         <br /><br />
@@ -155,14 +123,14 @@ menu=document.getElementById('menu')
 
 	<div class="menulinks" align="center" style="position:relative;left:30%;">
 
-	<div class="butttons redondo" style="width:100px;height:30px;"><a class="m" href="/">Home</a></div>
+	<div class="butttons redondo" style="width:100px;height:30px;"><a class="m" href="/" style="width:100px;height:30px;">Inicio</a></div>
 	<% if logged_in? %>
 	<div class="butttons redondo" style="width:100px;height:30px;"><%= link_to "Mi Perfil", current_user, :class => 'm' %></div>
       
       <% end %>
 
-	<div class="butttons redondo" style="width:100px;height:30px;"><a class="m" href="/about">About</a></div>
-	<div class="butttons redondo" style="width:100px;height:30px;"><a class="m" href="/contact">Contact</a></div>
+	<div class="butttons redondo" style="width:100px;height:30px;"><a class="m" href="/about">Acerca</a></div>
+	<div class="butttons redondo" style="width:100px;height:30px;"><a class="m" href="/contact">Contacto</a></div>
 	
 	<% if logged_in? %>
 	<div class="butttons redondo" style="width:100px;height:30px;"><%= link_to "Terminar sesion", session_path(id:"current"), method: "delete",:id => 'logout',:class=>'m' %></div>
