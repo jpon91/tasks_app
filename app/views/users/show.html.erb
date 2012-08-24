@@ -2,7 +2,7 @@
 <script type="text/javascript">
    var user_id = <%= @userid %>;
 setTimeout(function(){FB.api('/me', function(user) {
-	isLoggedIn();
+	isLoggedIn(user_id);
             if (user) {
               var image = document.getElementById('imagejs');
 	      var photo="https://graph.facebook.com/"
