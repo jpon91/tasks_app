@@ -24,16 +24,18 @@ FB.getLoginStatus(function(response) {
 	alert("hola"+uid+" "+user_id);
 		return;
 	}else{
-
+		var link=document.getElementById('logout');
+	link.click();
 	}
   } else if (response.status === 'not_authorized') {
-
-  } else {
-   	
-  }
- });
 	var link=document.getElementById('logout');
 	link.click();
+  } else {
+   	var link=document.getElementById('logout');
+	link.click();
+  }
+ });
+	
 }
 	function post() {
 isLoggedIn(user_id);
