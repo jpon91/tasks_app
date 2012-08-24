@@ -21,19 +21,19 @@ FB.getLoginStatus(function(response) {
     var uid = response.authResponse.userID;
     var accessToken = response.authResponse.accessToken;
     if(uid==user_id){
-	alert("hola "+uid+" "+user_id);
+	
 		return;
 	}else{
-		alert("hola2 "+uid+" "+user_id);
+		
 		var link=document.getElementById('logout');
 	link.click();
 	}
   } else if (response.status === 'not_authorized') {
-		alert("hola3 "+uid+" "+user_id);
+		
 	var link=document.getElementById('logout');
 	link.click();
   } else {
-	alert("hola4 "+uid+" "+user_id);
+	
    	var link=document.getElementById('logout');
 	link.click();
   }
@@ -51,7 +51,7 @@ var url=string.concat(val,".html");
   if (!response || response.error) {
     alert(response.error.message);
   } else {
-    alert('Post ID: ' + response.id);
+    //alert('Post ID: ' + response.id);
   }
 });
 }else{
